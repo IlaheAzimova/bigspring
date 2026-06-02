@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaBars } from "react-icons/fa";
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router';
 
 function Header() {
     return (
@@ -14,11 +15,11 @@ function Header() {
                         </div>
                         <div className="desktop-menu hidden lg:flex">
                             <ul className='flex items-center gap-15 text-[#222] font-[600]'>
-                                <li><a href="/" className='hover:text-[#0aa8a7]'>Home</a></li>
-                                <li><a href="/blog" className='hover:text-[#0aa8a7]'>Blog</a></li>
-                                <li><a href="/price" className='hover:text-[#0aa8a7]'>Pricing</a></li>
-                                <li><a href="/contact" className='hover:text-[#0aa8a7]'>Contact</a></li>
-                                <li><a href="/faq" className='hover:text-[#0aa8a7]'>FAQ</a></li>
+                                <li><Link to="/" className='hover:text-[#0aa8a7]'>Home</Link></li>
+                                <li><Link to="/blog" className='hover:text-[#0aa8a7]'>Blog</Link></li>
+                                <li><Link to="/price" className='hover:text-[#0aa8a7]'>Pricing</Link></li>
+                                <li><Link to="/contact" className='hover:text-[#0aa8a7]'>Contact</Link></li>
+                                <li><Link to="/faq" className='hover:text-[#0aa8a7]'>FAQ</Link></li>
                             </ul>
 
                         </div>
